@@ -230,12 +230,19 @@ const Hero = ({ handleOrderPopup }) => {
             {/* Image section */}
             <div className="min-h-[450px] sm:min-h-[450px] flex justify-center items-center relative order-1 sm:order-2 ">
               <div className="h-[300px] sm:h-[450px] overflow-hidden flex justify-center items-center">
-                <img
+                {/* <img
                   data-aos="zoom-in"
                   data-aos-once="true"
                   src={selectedProject.img}
                   alt="project preview"
                   className="w-[300px] h-[300px] sm:h-[450px] sm:w-[450px] sm:scale-125 object-contain mx-auto"
+                /> */}
+                <img
+                  data-aos="zoom-in"
+                  data-aos-once="true"
+                  src={selectedProject.img}
+                  alt="project preview"
+                  className="w-[350px] h-[250px] sm:w-[500px] sm:h-[350px] sm:scale-110 object-cover rounded-[50%] shadow-xl border-4 border-white mx-auto"
                 />
               </div>
               <div className="flex lg:flex-col lg:top-1/2 lg:-translate-y-1/2 lg:py-2 justify-center gap-4 absolute -bottom-[40px] lg:-right-1 bg-white rounded-full">
