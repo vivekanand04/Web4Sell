@@ -24,43 +24,45 @@ const testimonialData = [
 
 const Testimonial = () => {
   var settings = {
-    dots: true,
-    arrows: false,
-    infinite: true,
-    speed: 500,
-    // slidesToShow: 2,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    cssEase: "linear",
-    pauseOnHover: true,
-    pauseOnFocus: true,
+    dots: true, // dots dikhane ke liye, yani neeche chhote indicators honge
+    arrows: false, // arrow buttons disable kiye gaye hain
+    infinite: true, // slider infinite chalega, end ke baad fir se start hoga
+    speed: 500, // slide badalne ki speed 500 milliseconds hai
+    // slidesToShow: 2, // kitne slides ek sath dikhane hain (ye line abhi comment mein hai)
+    slidesToScroll: 1, // ek baar mein kitni slide scroll hogi
+    autoplay: true, // automatic slide chalti rahegi
+    autoplaySpeed: 2000, // har 2 second (2000ms) mein slide change hogi
+    cssEase: "linear", // transition effect linear hoga (same speed throughout)
+    pauseOnHover: true, // jab mouse slide pe hoga to autoplay ruk jayega
+    pauseOnFocus: true, // jab focus (keyboard ya mouse se) slide pe hoga to autoplay rukega
     responsive: [
+      // yeh different screen sizes ke hisaab se settings set karta hai
       {
-        breakpoint: 10000,
+        breakpoint: 10000, // jab screen width 10000px ya usse kam hogi
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
+          slidesToShow: 2, // 2 slides ek sath dikhenge
+          slidesToScroll: 1, // ek baar mein ek slide aage badhegi
+          infinite: true, // infinite loop on rahega
         },
       },
       {
-        breakpoint: 1024,
+        breakpoint: 1024, // jab screen width 1024px ya usse kam hogi
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          initialSlide: 2,
+          slidesToShow: 2, // 2 slides ek sath dikhenge
+          slidesToScroll: 1, // ek slide scroll hogi
+          initialSlide: 2, // initial starting slide 3rd hogi (index 2 se count hota hai)
         },
       },
       {
-        breakpoint: 640,
+        breakpoint: 640, // jab screen width 640px ya usse kam hogi
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToShow: 1, // sirf 1 slide ek baar mein dikhegi
+          slidesToScroll: 1, // ek slide scroll hogi
         },
       },
     ],
   };
+
   return (
     <>
       <div data-aos="fade-up" data-aos-duration="300" className="py-10">
