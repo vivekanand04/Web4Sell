@@ -67,9 +67,9 @@ web4sell/
 
 
 📬 Contact
-Built with ❤️ by [Your Name]
-📧 [your.email@example.com]
-🔗 Portfolio: [your-portfolio-link.com]
+Built with ❤️ by NIT AP Graduates
+📧 vivek235x@gmail.com
+
 
 
  
